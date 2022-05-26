@@ -3,7 +3,51 @@
     --grayish-blue: hsl(240, 18%, 77%);
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+html {
+    font-size: 16px;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+}
+
+.image img:last-child {
+    display: none;
+}
+
+.john {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.container .content span{
+    display: block;
+}
+
+.container .content p {
+    color: var(--dark-blue);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.container .content span:first-child {
+    font-weight: 700;
+}
+
+.container .content span:last-child {
+    font-weight: 300;
+    color: var(--grayish-blue);
+}
+
+#curved-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
