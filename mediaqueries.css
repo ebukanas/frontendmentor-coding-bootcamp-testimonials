@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row-reverse;
+        padding: 0 10%;
+    }
+    
+    .avatar {
+        flex: 1;
+    }
+
+    .content {
+        flex: 1;
+        text-align: left;
+        background-position: 25% 0%;
+        background-size: 100px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .content span {
+        display: inline;
+    }
+
+    .content p {
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+
+    .content span {
+        font-size: 1em;
+    }
+}

@@ -10,14 +10,70 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.image img {
-    width: 100%;
+main {
+    display: flex;
 }
 
-.image img:last-child {
+/* .bg-image {
+    background-image: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+} */
+
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.avatar #tanya_img, #john_img {
+    max-width: 65%;
+}
+
+.avatar #john_img {
     display: none;
+}
+
+.avatar .buttons {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 14px;
+    border-style: none;
+    font-size: 0;
+    filter: drop-shadow(0 0 0.75rem var(--grayish-blue));
+}
+
+.avatar .buttons button {
+    border-style: none;
+    background-color: white;
+    width: 32px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.avatar-images {
+    filter: drop-shadow(0px 10px 10px var(--grayish-blue));
+}
+
+.avatar .buttons button img {
+    max-width: 8px;
+    height: 12px;
+}
+
+.avatar .buttons button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.avatar .buttons button:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .john {
@@ -31,23 +87,34 @@ body {
     position: relative;
 }
 
-.container .content span{
+.content {
+    padding: 0em 10%;
+    margin-top: 2em;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 60px;
+}
+
+.content span{
     display: block;
 }
 
-.container .content p {
+.content p {
     color: var(--dark-blue);
     font-weight: 300;
     line-height: 1.5;
+    margin-top: 1.5em;
 }
 
-.container .content span:first-child {
+.content span:first-child {
     font-weight: 700;
 }
 
-.container .content span:last-child {
+.content span:last-child {
     font-weight: 300;
     color: var(--grayish-blue);
+    margin-top: 2px;
 }
 
 #curved-background {
@@ -58,5 +125,15 @@ body {
 }
 
 #curved-background img {
-    width: 100%;
+    max-width: 80%;
+}
+
+.avatar .bg-image {
+    position: absolute;
+    margin-top: -32px;
+    z-index: -2;
+}
+
+.avatar .bg-image img {
+    max-width: 85%;
 }
