@@ -9,6 +9,10 @@
         height: fit-content;
     }
 
+    .avatar .buttons {
+        left: 25%;
+    }
+
     .content {
         flex: 1;
         text-align: left;
