@@ -6,6 +6,7 @@
     
     .avatar {
         flex: 1;
+        height: fit-content;
     }
 
     .content {
