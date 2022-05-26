@@ -12,6 +12,10 @@ body {
     height: 100vh;
 }
 
+.image img {
+    width: 100%;
+}
+
 .image img:last-child {
     display: none;
 }
@@ -53,6 +57,6 @@ body {
     z-index: -1;
 }
 
-#curved-background {
+#curved-background img {
     width: 100%;
 }
