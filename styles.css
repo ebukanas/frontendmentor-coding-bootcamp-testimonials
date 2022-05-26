@@ -34,6 +34,7 @@ main {
 
 .avatar #tanya_img, #john_img {
     max-width: 65%;
+    margin: 0 auto;
 }
 
 .avatar #john_img {
